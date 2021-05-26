@@ -10,7 +10,7 @@ export default function Home() {
   const [formSubject, setFormSubject] = useState('')
   const [formMessage, setFormMessage] = useState('')
 
-  const [formAlert, setFormAlert] = useState(false)
+  const [formAlert, setFormAlert] = useState('')
 
   const me = {
     nama: 'Ahmad Ardiansyah',
@@ -216,17 +216,26 @@ export default function Home() {
   ]
 
   const submitKontak = async (e) => {
-    e.preventDefault()
-    let msg = `${formNama}%0a${formEmail}%0a${formPhone}%0a%0a${formSubject}%0a${formMessage}`
-    let wa  = `https://api.callmebot.com/whatsapp.php?phone=+6282334093822&text=${msg}&apikey=315903`
-    await fetch(wa)
-    setFormAlert(true)
+    if(formNama && formEmail && formPhone && formSubject && formMessage) {
+      setFormAlert('Pesan Kamu sudah terkirim, Terimakasih!')
+      let msg = `${formNama}%0a${formEmail}%0a${formPhone}%0a%0a${formSubject}%0a${formMessage}`
+      let wa  = `https://api.callmebot.com/whatsapp.php?phone=+6282334093822&text=${msg}&apikey=315903`
+      setFormNama('')
+      setFormEmail('')
+      setFormPhone('')
+      setFormSubject('')
+      setFormMessage('')
+      fetch(wa)
+    }
+    else {
+      setFormAlert('Silahkan isi semua form diatas')
+    }
   }
 
   return (
     <Fragment>
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
         <title>Ahmad Ardiansyah</title>
@@ -1077,7 +1086,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-8 mt-5 mt-lg-0">
-                <form onSubmit={e => submitKontak(e)} role="form" className="email-form">
+                <section role="form" className="email-form" style={{ paddingTop: '0px' }}>
                   <div className="row">
                     <div className="col-md-4 form-group">
                       <input
@@ -1101,7 +1110,7 @@ export default function Home() {
                         placeholder="Your Email"
                         required />
                     </div>
-                    <div className="col-md-4 form-group">
+                    <div className="col-md-4 form-group mt-3 mt-md-0">
                       <input
                         type="text"
                         name="phone"
@@ -1138,15 +1147,15 @@ export default function Home() {
                     {
                       formAlert ?
                         <div className="sent-message">
-                          Your message has been sent. Thank you!
+                          {formAlert}
                         </div>
                       : null
                     }
                   </div>
                   <div className="text-center">
-                    <button className="btn btn-primary px-4 py-2" style={{borderRadius: '10rem'}} type="submit">Send Message</button>
+                    <button onClick={e => submitKontak(e)} className="btn btn-primary px-4 py-2" style={{borderRadius: '10rem'}} type="button">Send Message</button>
                   </div>
-                </form>
+                </section>
               </div>
             </div>
           </div>
