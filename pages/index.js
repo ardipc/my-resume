@@ -79,6 +79,33 @@ export default function Home() {
 
   const projects = [
     {
+      judul: 'DreamProject',
+      tahun: '2022 - WEB APP - INDIVIDUAL',
+      client: 'Justin on Freelancer',
+      deskripsi: [
+        "Lead in the design, development, and implementation of the graphic, layout, and production communication materials",
+        "Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project."
+      ]
+    },
+    {
+      judul: 'DreamProject',
+      tahun: '2022 - WEB APP - INDIVIDUAL',
+      client: 'Justin on Freelancer',
+      deskripsi: [
+        "Lead in the design, development, and implementation of the graphic, layout, and production communication materials",
+        "Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project."
+      ]
+    },
+    {
+      judul: 'PlayProject',
+      tahun: '2021 - WEB APP - INDIVIDUAL',
+      client: 'PT Telkom Indonesia Surabaya',
+      deskripsi: [
+        "Lead in the design, development, and implementation of the graphic, layout, and production communication materials",
+        "Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project."
+      ]
+    },
+    {
       judul: 'Carsworld PWA',
       tahun: '2021 - WEB APP - INDIVIDUAL',
       client: 'PT Carsworld Digital Indonesia',
