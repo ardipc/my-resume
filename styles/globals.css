@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +12,21 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+.blur-2x {
+  filter: blur(2px);
+}
+
+.blur-4x {
+  filter: blur(4px);
+}
+
+.blur-6x {
+  filter: blur(6px);
+}
+
+.blur-8x {
+  filter: blur(8px);
 }
