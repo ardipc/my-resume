@@ -25,8 +25,8 @@ export default function Home() {
     role: 'Fullstack Engineer & Web Developer',
     email: 'ahmad.ardi06@gmail.com',
     website: 'https://me.ardimasyu.online',
-    alamat: 'Jl. Anyelir RT004 / RW002, Kp. Babakan Smapal, Lengkong Gudang, Serpong, Tangerang Selatan, Banten.',
-    bod: '17 Januari 1997',
+    alamat: 'Lengkong Gudang, Serpong, Tangerang Selatan, Banten.',
+    bod: '-',
     phone: '+62 823 3409 3822',
     city: 'Lumajang',
     age: (new Date()).getFullYear() - 1997,
@@ -84,6 +84,16 @@ export default function Home() {
   ]
 
   const projects = [
+    {
+      judul: 'Nasmoco Auto Gallery',
+      tahun: '2021 - WEB APP - TEAM',
+      client: 'Nasmoco',
+      deskripsi: [
+        "NASMOCO AUTO GALLERY (NAG) adalah layanan baru dari Nasmoco Group dimana kami melayani penjualan dan pembelian mobil bekas serta trade in (tukar tambah) baik ke unit mobil bekas atau ke unit Toyota baru.",
+        "Jobdesk saya adalah membuat dan merancang desain prototype, development, sampai deploy production ke server Alibaba Cloud.",
+        "https://nasmoco.autogallery.co.id"
+      ]
+    },
     {
       judul: 'DreamProject',
       tahun: '2021 - WEB APP - INDIVIDUAL',
