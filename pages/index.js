@@ -22,8 +22,8 @@ export default function Home() {
     nama: 'Ahmad Ardiansyah',
     foto: '/assets/img/profile-img.jpg',
     slider: "Developer, Freelancer, DevOps, Database Engineer, Fullstack Engineer",
-    role: 'Fullstack Engineer & Web Developer',
-    email: 'ahmad.ardi06@gmail.com',
+    role: 'DevOps Engineer & Full Stack Developer',
+    email: 'ardiansyah3ber@gmail.com',
     website: 'https://me.ardimasyu.online',
     alamat: 'Lengkong Gudang, Serpong, Tangerang Selatan, Banten.',
     bod: '-',
@@ -84,6 +84,26 @@ export default function Home() {
   ]
 
   const projects = [
+    {
+      judul: 'Production Management System',
+      tahun: '2021 - WEB APP - TEAM',
+      client: 'Arnotts Group',
+      deskripsi: [
+        "PMS adalah sistem pengelolaan produksi seperti perencanaan jumlah produk, kualitas produk, harga jual produk, maupun saat produk harus selesai dibuat, atau pembuatan rencana kerja harian.",
+        "Jobdesk saya adalah membuat UI/UX yang terlah disediakan dan mengintegrasikan API yang sudah disiapkan oleh tim Backend.",
+        "https://pms.i2gawa.com"
+      ]
+    },
+    {
+      judul: 'Computerized Maintenance Management System',
+      tahun: '2021 - WEB APP - TEAM',
+      client: 'Arnotts Group',
+      deskripsi: [
+        "CMMS adalah sebuah program komputer yang dirancang untuk membantu dalam perencanaan, manajemen, dan fungsi administratif yang dibutuhkan dalam pemeleiharaan yang efektif.",
+        "Jobdesk saya adalah membuat UI/UX yang terlah disediakan dan mengintegrasikan API yang sudah disiapkan oleh tim Backend.",
+        "https://cmms.i2gawa.com"
+      ]
+    },
     {
       judul: 'Nasmoco Auto Gallery',
       tahun: '2021 - WEB APP - TEAM',
@@ -195,6 +215,12 @@ export default function Home() {
   ]
 
   const sertifikasi = [
+    {
+      judul: 'ACA Cloud Computing Certification',
+      tahun: 'Dec 2021 - Present',
+      penerbit: 'Alibaba Cloud Professional Certification',
+      link: 'https://edu.alibabacloud.com/certification/aca_cloudcomputing'
+    },
     {
       judul: 'Google Cloud Training',
       tahun: '2019 - Present',
