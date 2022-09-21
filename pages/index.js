@@ -312,8 +312,8 @@ export default function Home() {
       path: shapes[getRandomInt(0,5)]
     },
     {
-      judul: 'Desain Website',
-      deskripsi: 'Desain website company profile, tema wordpress, dengan framework Bootstrap, Materialize, atau Foundation.',
+      judul: 'Mobile Development',
+      deskripsi: 'Melayani pembuatan aplikasi mobile Android atau IOS untuk manajemen informasi sistem.',
       icon: 'bx-image',
       path: shapes[getRandomInt(0,5)]
     },
