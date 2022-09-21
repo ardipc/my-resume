@@ -33,7 +33,7 @@ export default function Home() {
     degree: 'Diploma III',
     avail: 'Available',
     deskripsi: 'Fullstack Developer',
-    resume: 'Saya lulusan Diploma III dari jurusan Teknik Informatika di Politeknik Elektronika Negeri Surabaya dengan pengalaman bekerja di berbagai  bidang (full-stack) pengembangan perangkat lunak. Saya telah membangun proyek dalam tim kecil dan Saya sedang mencari peran dimana Saya dapat tumbuh dan terus belajar dari anggota tim berpengalaman lainnya.',
+    resume: 'Saya lulusan Diploma III dari jurusan Teknik Informatika di Politeknik Elektronika Negeri Surabaya dengan pengalaman bekerja di Frontend, Backend, ataupun Fullstack pengembangan perangkat lunak. Saya sedang membangun proyek dalam tim kecil. Mengembangkan diri dan menggali ilmu dengan berjejaring dengan kolega kerja',
     social: [
       {
         icon: 'github',
@@ -518,7 +518,7 @@ export default function Home() {
                     </ul>
                   </div>
                 </div>
-                <p>{me.deskripsi}</p>
+                <p>{me.resume}</p>
               </div>
             </div>
           </div>
