@@ -352,9 +352,9 @@ export default function Home() {
     },
     {
       judul: 'EFALCAD',
-      deskripsi: 'Enigmalogy adalah company yang bergerak dibidang IT konsultan.',
+      deskripsi: 'EFALCAD adalah sistem management asset stockopname merchants Sariroti, transfer in, ataupun transfer out asset antar merchants.',
       gambar: '/assets/img/portfolio/efalcad.png',
-      filter: 'filter-web'
+      filter: 'filter-app'
     },
     {
       judul: 'MyTsel Duplicate',
