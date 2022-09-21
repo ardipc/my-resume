@@ -24,8 +24,8 @@ export default function Home() {
     slider: "Developer, Freelancer, DevOps, Database Engineer, Fullstack Engineer",
     role: 'DevOps Engineer & Full Stack Developer',
     email: 'ardiansyah3ber@gmail.com',
-    website: 'https://me.ardimasyu.online',
-    alamat: 'Lengkong Gudang, Serpong, Tangerang Selatan, Banten.',
+    website: 'https://me.arralin.store',
+    alamat: 'Jl. Cemara I Blok B3 No 25, Rawabuntu, Serpong, Tangerang Selatan, Banten.',
     bod: '-',
     phone: '+62 823 3409 3822',
     city: 'Lumajang',
@@ -60,13 +60,28 @@ export default function Home() {
 
   const summary = {
     nama: 'Ahmad Ardiansyah',
-    deskripsi: 'Fast learner, kreatif, inovatif, kerja keras dan deadline-driven dengan pengalaman 2+ tahun dalam mendesain dan membangun aplikasi berbasis web yang dibutuhkan oleh client.',
+    deskripsi: 'Fast learner, kreatif, inovatif, kerja keras dan deadline-driven dengan pengalaman 4+ tahun dalam mendesain dan membangun aplikasi berbasis web yang dibutuhkan oleh client.',
     kontak: [
-      "Head Office CARSWORLD Building 7th Floor",
-      "(021) 2235-6880",
-      "https://carsworld.co.id/"
+      "Pasaraya Blok M Gedung B Lt. 7 Jalan Iskandarsyah II No.7, RW. 2, Melawai, Kebayoran Baru, RT.3/RW.1, Melawai.",
+      "Kby. Baru Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160",
+      "https://gojek.com/"
     ]
   }
+  
+  const working = [
+    {
+      jurusan: 'Gojek Indonesia',
+      tahun: '2022 - Sekarang',
+      kampus: 'https://gojek.com',
+      deskripsi: 'PT Gojek Indonesia is an Indonesian on-demand multi-service platform and digital payment technology group based in Jakarta. Gojek was first established in Indonesia in 2009 as a call center to connect consumers to courier delivery and two-wheeled ride-hailing services.'
+    },
+    {
+      jurusan: 'Carsworld Digital Indonesia',
+      tahun: '2018 - 2022',
+      kampus: 'https://carsworld.co.id',
+      deskripsi: 'Carsworld Informasi Tepat, Urusan Mobil Jadi Cepat! Kamu bisa mencari bengkel, cuci mobil, biro jasa dan pom bensin di lokasi terdekat Kamu.'
+    },
+  ]
 
   const edukasi = [
     {
@@ -84,6 +99,16 @@ export default function Home() {
   ]
 
   const projects = [
+    {
+      judul: 'EFALCAD - Management Asset Sariroti',
+      tahun: '2022 - MOBILE APP - INDIVIDUAL',
+      client: 'Sariroti',
+      deskripsi: [
+        "EFALCAD adalah sistem management asset stockopname merchants Sariroti, transfer in, ataupun transfer out asset antar merchants.",
+        "Aplikasi EFALCAD sendiri mobile based, menggunakan bahasa pemrograman Flutter. Jobdesk saya adalah mengintegrasi API ke mobile apps.",
+        "https://api.sairoti.com"
+      ]
+    },
     {
       judul: 'Production Management System',
       tahun: '2021 - WEB APP - TEAM',
@@ -216,6 +241,18 @@ export default function Home() {
 
   const sertifikasi = [
     {
+      judul: 'Automation Pro II Exam',
+      tahun: 'May 2022 - Present',
+      penerbit: 'Workato Automation Institute',
+      link: 'https://verify.skilljar.com/c/8v69katzpfhe'
+    },
+    {
+      judul: 'Automation Pro I Exam',
+      tahun: 'May 2022 - Present',
+      penerbit: 'Workato Automation Institute',
+      link: 'https://verify.skilljar.com/c/n2w4ok9f77id'
+    },
+    {
       judul: 'ACA Cloud Computing Certification',
       tahun: 'Dec 2021 - Present',
       penerbit: 'Alibaba Cloud Professional Certification',
@@ -301,6 +338,30 @@ export default function Home() {
   ]
 
   const portofolios = [
+    {
+      judul: 'BDV Asia',
+      deskripsi: 'BDV Asia adalah company yang bergerak dibidang kecantikan, produknya adalah berupa kosmetik, eyelash, aksesoris.',
+      gambar: '/assets/img/portfolio/bdvasia.png',
+      filter: 'filter-web'
+    },
+    {
+      judul: 'Enigmalogy',
+      deskripsi: 'Enigmalogy adalah company yang bergerak dibidang IT konsultan.',
+      gambar: '/assets/img/portfolio/enigmalogy.png',
+      filter: 'filter-web'
+    },
+    {
+      judul: 'EFALCAD',
+      deskripsi: 'Enigmalogy adalah company yang bergerak dibidang IT konsultan.',
+      gambar: '/assets/img/portfolio/enigmalogy.png',
+      filter: 'filter-web'
+    },
+    {
+      judul: 'MyTsel Duplicate',
+      deskripsi: 'MyTsel adalah aplikasi UI/UX saja yang saya buat sendiri dari desain komunitas.',
+      gambar: '/assets/img/portfolio/mytsel.png',
+      filter: 'filter-app'
+    },
     {
       judul: 'Dream Project',
       deskripsi: 'DreamProject adalah platform untuk menggalang dana atau mengiklankan suatu kampanye.',
@@ -519,6 +580,18 @@ export default function Home() {
                     }
                   </ul>
                 </div>
+                
+                <h3 className="resume-title">Works</h3>
+                {
+                  working.map((item, i) => (
+                    <div key={`work-${i}`} className="resume-item">
+                      <h4>{item.jurusan}</h4>
+                      <h5>{item.tahun}</h5>
+                      <p><em>{item.kampus}</em></p>
+                      <p>{item.deskripsi}</p>
+                    </div>
+                  ))
+                }
 
                 <h3 className="resume-title">Edukasi</h3>
                 {
