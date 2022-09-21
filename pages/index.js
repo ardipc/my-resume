@@ -32,7 +32,7 @@ export default function Home() {
     age: (new Date()).getFullYear() - 1997,
     degree: 'Diploma III',
     avail: 'Available',
-    deskripsi: 'Pengalaman Saya yang beragam di bidang IT (misalnya pemrograman, arsitektur software, pengembang web, dll) berasal dari keinginan sederhana untuk memberdayakan kehidupan manusia dengan teknologi komputasi. Dunia menjadi kecil dan semakin kecil dari hari ke hari. Batas geografis menghilang; Perbedaan budaya memudar. Umat manusia akan berkumpul bersama. Itulah yang mendorong Saya: membantu membuka jalan menuju masyarakat global yang diberdayakan.',
+    deskripsi: 'Fullstack Developer',
     resume: 'Saya lulusan Diploma III dari jurusan Teknik Informatika di Politeknik Elektronika Negeri Surabaya dengan pengalaman bekerja di berbagai  bidang (full-stack) pengembangan perangkat lunak. Saya telah membangun proyek dalam tim kecil dan Saya sedang mencari peran dimana Saya dapat tumbuh dan terus belajar dari anggota tim berpengalaman lainnya.',
     social: [
       {
@@ -73,13 +73,13 @@ export default function Home() {
       jurusan: 'Gojek Indonesia',
       tahun: '2022 - Sekarang',
       kampus: 'https://gojek.com',
-      deskripsi: 'PT Gojek Indonesia is an Indonesian on-demand multi-service platform and digital payment technology group based in Jakarta. Gojek was first established in Indonesia in 2009 as a call center to connect consumers to courier delivery and two-wheeled ride-hailing services.'
+      deskripsi: 'Di Gojek IT Integration Bertanggung jawab untuk mengelola semua Automation Integration baik di local dan cloud di Gojek dan semua anak perusahaan di tingkat Proyek dan Operasi.'
     },
     {
       jurusan: 'Carsworld Digital Indonesia',
       tahun: '2018 - 2022',
       kampus: 'https://carsworld.co.id',
-      deskripsi: 'Carsworld Informasi Tepat, Urusan Mobil Jadi Cepat! Kamu bisa mencari bengkel, cuci mobil, biro jasa dan pom bensin di lokasi terdekat Kamu.'
+      deskripsi: 'Di Carsworld Bertanggung jawab untuk mengelola semua Infrastruktur cloud ataupun onpremis, dan juga membuat CI/CD development cycle.'
     },
   ]
 
@@ -528,7 +528,7 @@ export default function Home() {
           <div className="container" data-aos="fade-up">
             <div className="section-title">
               <h2>Keahlian</h2>
-              <p>Berikut keahlian yang sudah Saya kuasai dalam beberapa tahun lalu sampai sekarang dalam bentuk persentase.</p>
+              <p>Berikut keahlian yang sudah saya kuasai.</p>
             </div>
 
             <div className="row skills-content">
