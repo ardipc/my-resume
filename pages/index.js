@@ -175,7 +175,7 @@ export default function Home() {
       deskripsi: [
         "Platform web yang menyediakan informasi bengkel, SPBU, tempat cuci mobil, biro jasa terdekat dengan posisi Anda.",
         "Disini saya membuat desain mockup dalam bentuk web tapi dalam bentuk aplikasi mobile yang responsive.",
-        "https://mobid.ardimasyu.online"
+        "https://mobid.vercel.app"
       ]
     },
     {
