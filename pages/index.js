@@ -353,7 +353,7 @@ export default function Home() {
     {
       judul: 'EFALCAD',
       deskripsi: 'Enigmalogy adalah company yang bergerak dibidang IT konsultan.',
-      gambar: '/assets/img/portfolio/enigmalogy.png',
+      gambar: '/assets/img/portfolio/efalcad.png',
       filter: 'filter-web'
     },
     {
